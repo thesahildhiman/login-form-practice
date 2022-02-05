@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    background-color: purple;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    background-color: aliceblue;
+    width: 25vw;
+    height: 70vh;
+    border-radius: 5px;
+}
+.form-heading{
+    text-align: center;
+    margin: 30px;
+    font-weight: 500;
+}
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+.social-btn{
+    width: 8.5rem;
+    height: 2.5rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+}
+.social-btn span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 5px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.fb{
+    background-color: #3b5998;
+}
+.tw{
+    background-color: #00acee;
+}
+.input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+form .input-box{
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.input-box label{
+    color: rgb(128, 128, 128);
+}
+.input{
+    border: none;
+    width: 230px;
+    height: 30px;
+    outline: none;
+    margin: 0 0 0 10px;
+    
+}
+.chk-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    /* background-color: red; */
+    margin: 12px;
+}
+.chk-link a{
+    text-decoration: none;
+}
+
+.login-btn{
+    width: 300px;
+    background-color: purple;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin: 12px;
+    cursor: pointer;
+}
+.btm-link{
+    /* background-color: #00acee; */
+    text-align: center;
+    margin: 10px;
+}
+.btm-link p a{
+    text-decoration: none;
+}
+
+/* @media screen and (max-width: 1369px) {
+    .social{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .social-btn{
+        margin: 10px;
+    }
+} */
+
+@media screen and (max-width: 900px) and (min-width: 560px) {
+    .form-container{
+        width: 80%;
+    }
+    .input{
+        width: 300px;
+        font-size: 1.3rem;
+    }
+    .login-btn{
+        width: 400px;
+        font-size: 1.5rem;
+    }
+    .chk-link{
+        width: 400px;
+    }
+    .chk-link span{
+        font-size: 1.2rem;
+    }
+    .btm-link p{
+        font-size: 1.2rem;
+    }
+    .social span{
+        font-size: 20px;
+    }
+    .social-btn{
+        width: 155px;
+        height: 50px;
+    }
+    .input-box{
+        width: 400px;
+    }
+}
+@media screen and (min-width: 520px) and (max-width: 560px) {
+    .form-container{
+        width: 80%;
+    }
+    .social{
+        /* flex-direction: column; */
+
+    }
+    .social-btn{
+        margin: 10px;
+    }
+    .input{
+        
+        font-size: 1.3rem;
+    }
+    .input-box{
+        width: 400px;
+        
+    }
+    .chk-link span{
+        font-size: 1.3rem;
+    }
+    .btm-link p{
+        font-size: 1.3rem;
+    }
+    .chk-link{
+        width: 400px;
+    }
+    .login-btn{
+        width: 400px;
+        font-size: 1.2rem;
+    }
+    
+}
+@media screen and (max-width: 520px) {
+    .form-container{
+        width: 80%;
+    }
+    .social{
+        flex-direction: column;
+    }
+    .social-btn{
+        margin: 8px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .form-container{
+        width: 90%;
+        height: 80vh;
+    }
+    .social{
+        flex-direction: column;
+
+    }
+    .social-btn{
+        margin: 10px;
+    }
+    .input-box{
+        /* width: 80%; */
+        width: 300px;
+    }
+    .input{
+        width: 200px;
+    }
+    .form-heading{
+        text-align: center;
+        margin: 15px;
+        font-weight: 200;
+    }
+}
+@media screen and (max-width: 375px) {
+    .form-container{
+        width: 90vw;
+        
+    }
+    .input-box{
+        width: 280px;
+        
+    }
+    .input{
+        width: 60%;
+    }
+    .chk-link{
+        width: 280px;
+    }
+    .login-btn{
+        width: 280px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 340px) {
+    .form-container{
+        width: 90vw;
+    }
+    .input-box{
+        width: 90%;
+    }
+    .input{
+        width: 70%;
+    }
+    .chk-link{
+        width: 200px;
+    }
+    .login-btn{
+        width: 200px;
+    }
+    .chk-link span{
+        font-size: .7rem;
+    }
+    .btm-link p{
+        font-size: .7rem;
+    }
+    .btm-link{
+        width: 200px;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .form-container{
+        width: 70vw;
+        height: 80vh;
+    }
+    .social{
+        width: 50%;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .social{
+        width: 100%;
+    }
+}
+
